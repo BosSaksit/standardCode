@@ -6,9 +6,16 @@ import { NavController } from 'ionic-angular';
   templateUrl: 'home.html'
 })
 export class HomePage {
+ 
 
   constructor(public navCtrl: NavController) {
 
+  }
+  goNavparampage(){
+    this.navCtrl.push("Navparam1Page")
+  }
+  goTemplateDriven(){
+    this.navCtrl.push("TemplateDriven1Page")
   }
 
 }
